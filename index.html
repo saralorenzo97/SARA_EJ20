@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+input:focus{
+    background-color: rgb(180, 205, 206) ;
+}
+
+:target{
+    background-color: salmon;
+    color: white;
+}
+nav a:last-of-type{
+    font-size: 8px;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    border-radius: .75em;
+    /* background-color: thistle;
+    color: white; */
+}
+nav a:last-of-type:hover{
+    padding: 5px 10px;
+    border: 1px solid blue;
+    border-radius: .75em;
+    background-color: thistle;
+    color: white;
+}
+/* p:first-child{
+    background-color: #3ba1a6;
+}  PARA EL PRIMER "P" DENTRO DEL DIV*/
+
+/* p:last-child{
+    background-color: teal;
+}  PARA EL ÚLTIMO "P" DENTRO DEL DIV*/
+
+/* p:only-child{
+    background-color: turquoise;
+}  PARA UN ÚNICO "P" DENTRO DEL DIV*/
+
+/* P:nth-child(4){
+    background-color: #3ba1a6;
+} PARA EL #4 DENTRO DEL DIV */
+
+/* p:nth-last-of-type(2){
+    background-color: turquoise;
+    color: white;
+} PARA EL #2 EMPEZANDO A CONTAR DESDE EL ÚLTIMO */
+
+p:first-of-type{
+    background: #00a5a7;
+} /*PARA LA PRIMERA "P" QUE SE ENCUENTRE*/
+</style>
+<body>
+    <form action="#" method="get">
+        <input type="text" name="correo" id="" placeholder="Escribe tu correo">
+        <input type="text" name="telefono" id="" placeholder="Escribe tu teléfono">
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+
+    <nav>
+        <a href="#section1">Sección 1</a>
+        <a href="#section2">Sección 2</a>
+        <a href="#section3">Sección 3</a>
+    </nav>
+
+    <div id="section1">Mostrar la información sección 1</div>
+    <div id="section2">Mostrar la información sección 2</div>
+    <div id="section3">Mostrar la información sección 3</div>
+
+    <!--  <div>
+       <p>A este párrafo SI le afecta puesto que es hijo del nodo padre body</p>
+
+        <h1>Bienvenido a mi web</h1>
+        <p>A este párrafo NO le afecta puesto que h1 no tiene ítem considerados como hijos.</p>
+    </div>
+    <div>
+        <a href="#">Enlace</a>
+        <p>A este párrafo no le afecta puesto que el primer nodo hijo dentro del div es un vínculo con 'a'</p>
+    </div>
+
+    <div>
+        <p>A este párrafo SI le afecta</p>
+        <p>A este párrafo NO le afecta</p>
+    </div> -->
+
+    <!-- <p>A este párrafo NO le afecta.</p>
+
+    <h1>Bienvenido a mi WEB2</h1>
+    <p>A este párrafo NO le afecta.</p>
+
+    <div>
+        <a href="#section2">Enlace 2</a>
+        <p>A este párrafo NO le afecta.</p>
+    </div> -->
+    <h1>WEB DE EJEMPLOS</h1>
+    <p>Primer párrafo dentro de body. SI le afecta</p>
+    <p>Segundo párrafo dentro de body. No le afecta</p>
+    <p>Tercer párrafo dentro de body. No le afecta</p>
+    <p>Cuarto párrafo dentro de body. No le afecta</p>
+
+    <div>
+        <p>A este párrafo 1 SI le afecta.</p>
+        <p>A este párrado 2 NO le afecta.</p>
+        <p>A este párrado 3 NO le afecta.</p>
+        <P>A este párrafo 4 NO le afecta.</P>
+        <p>A este párrado 5 NO le afecta.</p>
+    </div>
+</body>
+</html>
